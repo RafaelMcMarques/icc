@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+CPU type:	Intel Skylake processor
+CPU clock:	2.59 GHz
+--------------------------------------------------------------------------------
+
+
+1)
+X = -5.000000 35.000000 10.000000 -20.000000 1.666667 35.000000 -0.000000 -20.000000 3.333333 30.000000 -0.000000 -0.000000 -3.333333 30.000000 20.000000 -6.666667 20.000000 
+Residuo = -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 -0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000 
+Tempo: 0.010957ms
+
+
+2)
+X = -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan 
+Residuo = -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan 
+Tempo: 0.010972ms
+
+
+3)
+X = -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan 
+Residuo = -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan -nan 
+Tempo: 0.009410ms
+--------------------------------------------------------------------------------
+Region Metodo_1, Group 1: FLOPS_DP
++-------------------+------------+
+|    Region Info    | HWThread 3 |
++-------------------+------------+
+| RDTSC Runtime [s] |   0.000014 |
+|     call count    |          1 |
++-------------------+------------+
+
++------------------------------------------+---------+------------+
+|                   Event                  | Counter | HWThread 3 |
++------------------------------------------+---------+------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  |      18955 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |      19562 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |      63288 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |        136 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |       1419 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |        648 |
++------------------------------------------+---------+------------+
+
++----------------------+--------------+
+|        Metric        |  HWThread 3  |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.422401e-05 |
+| Runtime unhalted [s] | 7.547533e-06 |
+|      Clock [MHz]     |     801.1247 |
+|          CPI         |       1.0320 |
+|     DP [MFLOP/s]     |     301.1106 |
+|   AVX DP [MFLOP/s]   |     182.2271 |
+|   Packed [MUOPS/s]   |      55.1181 |
+|   Scalar [MUOPS/s]   |      99.7609 |
+|  Vectorization ratio |      35.5878 |
++----------------------+--------------+
+
+Region Metodo_2, Group 1: FLOPS_DP
++-------------------+------------+
+|    Region Info    | HWThread 3 |
++-------------------+------------+
+| RDTSC Runtime [s] |   0.000012 |
+|     call count    |          1 |
++-------------------+------------+
+
++------------------------------------------+---------+------------+
+|                   Event                  | Counter | HWThread 3 |
++------------------------------------------+---------+------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  |      19738 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |      16045 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |      52164 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |        204 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |       1483 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |        972 |
++------------------------------------------+---------+------------+
+
++----------------------+--------------+
+|        Metric        |  HWThread 3  |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.225175e-05 |
+| Runtime unhalted [s] | 6.190582e-06 |
+|      Clock [MHz]     |     797.2180 |
+|          CPI         |       0.8129 |
+|     DP [MFLOP/s]     |     471.6877 |
+|   AVX DP [MFLOP/s]   |     317.3424 |
+|   Packed [MUOPS/s]   |      95.9863 |
+|   Scalar [MUOPS/s]   |     121.0439 |
+|  Vectorization ratio |      44.2272 |
++----------------------+--------------+
+
+Region Metodo_3, Group 1: FLOPS_DP
++-------------------+------------+
+|    Region Info    | HWThread 3 |
++-------------------+------------+
+| RDTSC Runtime [s] |   0.000013 |
+|     call count    |          1 |
++-------------------+------------+
+
++------------------------------------------+---------+------------+
+|                   Event                  | Counter | HWThread 3 |
++------------------------------------------+---------+------------+
+|             INSTR_RETIRED_ANY            |  FIXC0  |      17069 |
+|           CPU_CLK_UNHALTED_CORE          |  FIXC1  |      18830 |
+|           CPU_CLK_UNHALTED_REF           |  FIXC2  |      61128 |
+| FP_ARITH_INST_RETIRED_128B_PACKED_DOUBLE |   PMC0  |        144 |
+|    FP_ARITH_INST_RETIRED_SCALAR_DOUBLE   |   PMC1  |       1307 |
+| FP_ARITH_INST_RETIRED_256B_PACKED_DOUBLE |   PMC2  |        676 |
++------------------------------------------+---------+------------+
+
++----------------------+--------------+
+|        Metric        |  HWThread 3  |
++----------------------+--------------+
+|  Runtime (RDTSC) [s] | 1.284281e-05 |
+| Runtime unhalted [s] | 7.265108e-06 |
+|      Clock [MHz]     |     798.3961 |
+|          CPI         |       1.1032 |
+|     DP [MFLOP/s]     |     334.7398 |
+|   AVX DP [MFLOP/s]   |     210.5458 |
+|   Packed [MUOPS/s]   |      63.8490 |
+|   Scalar [MUOPS/s]   |     101.7690 |
+|  Vectorization ratio |      38.5520 |
++----------------------+--------------+
+

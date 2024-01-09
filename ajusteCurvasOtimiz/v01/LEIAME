@@ -1,0 +1,28 @@
+T01 ICC (CI1164) Ajuste Polinomial
+
+Lucas Gabriel Batista Lopes GRR20220062
+Rafel Munhoz da Cunha Marques GRR20224385
+
+EXECUCAO:
+
+O executavel ajustePol é gerado através do comando make e sua entrada e saída estão de acordo com o especificado para o trabalho 01.
+
+O script ajustePol.sh deve ser executado via ./ajustePol.sh arquivoEntrada. Esse script compila o programa ajustePol e passa o arquivoEntrada como entrada. O script então executa o programa atraves do likwid e exibe na saida padrao as metricas de desempenho para montar o sistema linear e para resolve-lo.
+
+BIBLIOTECAS:
+
+-- ajuste-curvas:
+    Biblioteca que contem a funcao para montar o sistema linear a partir do metodo dos minimos quadrados. Essa biblioteca tambem contem a funcao calcularResiduo que recebe k pontos x,y e os coeficientes de um polinomio de grau n. A funcao guarda em um vetor todas as distancias de y para f(x) onde f éo polinomio de grau n.
+
+-- eliminacao-gauss:
+    Essa biblioteca contem uma funcao para realizar a eliminacao de gauss e a retrossubstituição para resolver um sistema linear
+
+-- interval-analysis:
+    Contem funcoes para realizar todas as operacoes matematicas basicas com intervalos. Tabmém inclui funcoes para ler um numero como um intervalo e para imprimir um intervalo.
+
+A FUNCAO MAIN:
+
+A funcao main realiza a leitura de entrada, aloca memoria para as estrutras de dados necessárias e chama as funcoes para montar e resolver o sistema linear. A main tambem é resposavel por medir o tempo de execucao de cada parte do problema (utilizando a funcao timestamp da biblioteca utils.h). Além disso, a main também incializa o likwid e define os grupos para análise.
+
+
+

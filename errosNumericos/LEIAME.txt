@@ -1,0 +1,10 @@
+EP01 - CI1164
+
+Rafael Munhoz da Cunha Marques - GRR20224385
+Lucas Gabriel Batista Lopes - GRR20220062
+
+O codigo-fonte esta no diretorio /ep01/src e pode ser compilado 
+atraves do comando 'make' no diretorio /ep01, gerando o executavel
+'ep01'
+
+O programa funcionou adequadamente em todos os casos de teste.

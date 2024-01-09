@@ -1,0 +1,18 @@
+EP04 ICC (CI1164) Otimização de Código Serial
+
+Lucas Gabriel Batista Lopes GRR20220062
+Rafel Munhoz da Cunha Marques GRR20224385
+
+Os resultados dos testes bem como a arquitetura em que eles foram realizados se encontram no diretorio resultados. As tabelas foram geradas atraves do script testes.sh
+
+OBS: em src/matriz.h pode-se editar os valores de UF (unroll factor) e BK (blocking factor) para melhor atender às especificações do seu CPU.
+
+-> OTIMIZAÇÕES:
+
+- multMatVet:
+Fora utilizadas as otimizações unroll & jam, adicionado restrict nos parâmetros para que o GCC utilize SIMD e utilizado uma variável auxiliar "int lim = n - n % UF" para que não seja necessário realizar esse cálculo em toda iteração do for.
+
+- mulMatMat:
+Foram utilizadas as otimizações unroll & jam e blocking, além de utilizar SIMD.
+
+
